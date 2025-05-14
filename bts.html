@@ -1,0 +1,111 @@
+<?php
+// behind_the_scenes.php
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Behind the Scenes</title>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #facc15;
+            letter-spacing: 1px;
+        }
+
+        .video-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .video-box {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+        }
+
+        .video-box video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .nav-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BEHIND THE SCENES</h1>
+
+    <div class="video-container">
+
+        <div class="video-box">
+            <video controls>
+                <source src="story1bts.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">Story 1</div>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="story2bts.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">Story 2</div>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="story3bts.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">Story 3</div>
+        </div>
+
+        <div class="video-box">
+            <video controls>
+                <source src="story4bts.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="caption">Story 4</div>
+        </div>
+
+    </div>
+
+    <a href="conclusion.php" class="nav-button">Next</a>
+
+</body>
+</html>
