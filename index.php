@@ -1,0 +1,72 @@
+<?php
+// No PHP variables needed here for now
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+        .welcome-text {
+            color: white;
+            font-size: 48px;
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            text-align: center;
+        }
+        .continue-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background-color: white;
+            color: #2575fc;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: buttonFadeIn 2s 1s forwards; /* start after 1s (after text fades in) */
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .continue-button:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes buttonFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="welcome-text">
+    Welcome to our IT Project
+</div>
+
+<a href="proposal.php">
+    <button class="continue-button">Continue</button>
+</a>
+
+</body>
+</html>

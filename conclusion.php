@@ -1,0 +1,94 @@
+<?php
+// conclusion.php
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conclusion</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255,255,255,0.05);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-top: 20px;
+        }
+        .thanks {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: white;
+            color: #1f1c2c;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .nav-button:hover {
+            background-color: #444;
+            color: white;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Conclusion</h1>
+
+    <div class="content">
+        This short film project, <strong>“The Untold Sides”</strong>, has served as a reflection of the real-life challenges that students silently endure. By highlighting struggles such as mental health, toxic friendships, family pressure, and financial instability, we hope this story not only raises awareness but also encourages empathy and support within the student community.
+
+        Throughout the process of scriptwriting, filming, and editing, we’ve grown as a team and learned how impactful storytelling can be when it’s based on real experiences. These stories might seem simple, but they carry emotions and truths that many students are too afraid to express.
+
+        The completion of this project is not just the end of a task but the beginning of a message: to look beyond the surface, to listen more, and to support those around us — because every student has a story that deserves to be heard.
+    </div>
+
+    <div class="thanks">
+        Thank you for watching and supporting our IT Project.
+    </div>
+
+    <div class="buttons">
+        <a href="page4.php" class="nav-button">Previous</a>
+        <a href="index.php" class="nav-button">Home</a>
+    </div>
+</div>
+
+</body>
+</html>

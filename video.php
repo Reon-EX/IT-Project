@@ -1,0 +1,137 @@
+<?php
+// No PHP variables needed here
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Short Film</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        .title {
+            font-size: 50px; /* Bigger */
+            font-weight: 900; /* Extra bold */
+            margin-bottom: 50px;
+            letter-spacing: 2px; /* Spaced letters */
+            text-transform: uppercase;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Slight glow */
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        .video-block {
+            margin-bottom: 50px;
+            opacity: 0;
+            animation: fadeInVideos 2s 2s forwards;
+        }
+        .story-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        video {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .desc-button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: white;
+            color: #2575fc;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .desc-button:hover {
+            background-color: #2575fc;
+            color: white;
+        }
+        .description {
+            margin-top: 10px;
+            display: none;
+            font-size: 16px;
+            color: #f1f1f1;
+        }
+    
+        .buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: white;
+            color: #1f1c2c;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .nav-button:hover {
+            background-color: #444;
+            color: white;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInVideos {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div class="title">SHORT FILM: THE UNTOLD SIDE</div>
+
+    <div class="videos">
+        <div class="video-block">
+            <video controls>
+                <source src="projectvideo.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="buttons">
+        <a href="story34.php" class="nav-button">Previous</a>
+        <a href="conclusion.php" class="nav-button">Next</a>
+           </div>
+
+        
+
+</body>
+</html>
